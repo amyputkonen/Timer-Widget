@@ -1,30 +1,55 @@
+/* General styling */
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f7f7f7;
-  margin: 0;
+  background-color: #f4f4f4; /* Change background color here */
+  font-family: Arial, sans-serif;
 }
 
 #timer-widget {
   text-align: center;
-  background: white;
-  padding: 20px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Clock styling */
+#time-display {
+  font-size: 150px; /* Large clock */
+  font-weight: bold;
+  color: #333333; /* Clock text color */
+  margin: 0;
+  line-height: 1;
+}
+
+/* Controls styling */
+#controls {
+  margin-top: 20px;
+  font-size: 12px; /* Small text for controls */
 }
 
 button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 12px; /* Small buttons */
   cursor: pointer;
+  background-color: #007BFF; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
 }
 
 button:disabled {
-  background-color: #ddd;
+  background-color: #cccccc; /* Disabled button color */
   cursor: not-allowed;
+}
+
+input[type="number"] {
+  font-size: 14px;
+  width: 60px;
+}
+
+label {
+  margin-right: 10px;
+  display: block;
 }
