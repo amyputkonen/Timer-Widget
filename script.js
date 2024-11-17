@@ -3,7 +3,8 @@ const resetButton = document.getElementById('reset-button');
 const minutesInput = document.getElementById('minutes');
 const timeDisplay = document.getElementById('time-display');
 const soundToggle = document.getElementById('sound-toggle');
-const alertSound = document.getElementById('alert-sound');
+const alertSound = new Audio('531022__creeeeak__bell15.wav');
+
 
 let timerInterval;
 let remainingTime = 0;
