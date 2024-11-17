@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="timer-widget">
+    <h1>Custom Timer</h1>
+    <div>
+      <label for="minutes">Set Timer (minutes):</label>
+      <input type="number" id="minutes" placeholder="Enter minutes" min="1">
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" id="sound-toggle">
+        Sound Alert
+      </label>
+    </div>
+    <button id="start-button">Start</button>
+    <button id="reset-button" disabled>Reset</button>
+    <h2 id="time-display">00:00</h2>
+    <audio id="alert-sound" src="alert.mp3"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
